@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.109.35.203:3306/activiti_workflow?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&nullCatalogMeansCurrent=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123edsaq
+  activiti:
+    database-schema-update: true
+    check-process-definitions: true
+    process-definition-location-prefix: classpath:/processes/
+    history-level: full
+#检测 数据表是否存在
+    db-history-used: true
